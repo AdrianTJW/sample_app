@@ -36,24 +36,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'sqlite3'
-  gem 'rspec-rails'
 end
 
 group :test do
-  gem 'selenium-webdriver'
-  gem 'capybara'
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard-minitest'
 end
-
-# gem 'sass-rails'
-# gem 'uglifier'
-# gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-# gem 'jbuilder'
-
-# group :doc do
-#   gem 'sdoc', require: false
-# end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
